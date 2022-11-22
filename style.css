@@ -1,0 +1,189 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+}
+
+body { 
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #b6cfde;
+}
+
+/*--------------------VARIABLES--------------------*/
+
+:root { 
+    --border-radius: 25px;
+    --width: 380px;
+    --light-text-color: rgba(0, 0, 0, 0.514);
+    --container-max-width: 500px;
+    --container-max-height: 800px
+}
+
+/*--------------------LAYOUT--------------------*/
+
+.input { 
+    border: 2px solid rgba(0, 0, 0, 0.178);
+    padding: 12px 36px;
+    border-radius: var(--border-radius);
+    margin: 0 60px;
+}
+
+.input a { 
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+#login { 
+    margin-top: 75px;
+    margin-bottom: 25px;
+    background-color: #78a6be;
+    padding: 14px 36px;
+    width: var(--width);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*--------------------BUTTON HOVER--------------------*/
+
+#login:hover { 
+    background-color: #1b3851;
+    transition: .2s;
+}
+
+#sign-up:hover { 
+    text-decoration: underline;
+}
+
+#forgot-password:hover { 
+    text-decoration: underline;
+}
+
+#apple:hover { 
+    background-color: rgb(206, 206, 206);
+    transition: .2s;
+}
+
+/*--------------------LOGIN CONTAINER--------------------*/
+
+.container { 
+    height: 800px;
+    width: 1000px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-color: white;
+    border-bottom-left-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    
+}
+
+.login-container { 
+    width: var(--container-max-width);
+    display: block;
+    max-height: var(--container-max-height);
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 75px;
+}
+
+.text { 
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+#apple { 
+    cursor: pointer;
+    transition: .2s;
+}
+
+#apple img { 
+    position: relative;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.or { 
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#input-1, #input-2 { 
+    width: var(--width);
+    font-family: 'Poppins';
+    font-size: 14px;
+    align-items: center;
+    padding: 15px 36px;
+}
+
+#input-2 { 
+    margin-top: 12.5px;
+}
+
+.remember-container { 
+    max-width: var(--container-max-width);
+    margin-top: 25px;
+}
+
+#checkbox { 
+    position: relative;
+    top: 1px;
+}
+
+#remember-span { 
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#forgot-password { 
+    margin-left: 45px;
+    font-size: 14px;
+    color: var(--light-text-color);
+}
+
+.create-account { 
+    font-size: 16px;
+}
+
+.create-account span { 
+    color: var(--light-text-color);
+}
+
+#sign-up { 
+    font-weight: 500;
+}
+
+/*--------------------IMAGE CONTAINER--------------------*/
+
+#image { 
+    width: var(--container-max-width);
+    height: var(--container-max-height);
+    position: relative;
+    top: 4px;
+    border-bottom-right-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    right: -2px;
+}
+
